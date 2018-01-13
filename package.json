@@ -34,7 +34,6 @@
     "nodemon": "^1.14.11",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^11.0.0",
-    "precss": "^2.0.0",
-    "ttab": "^0.6.1"
+    "precss": "^2.0.0"
   }
 }
