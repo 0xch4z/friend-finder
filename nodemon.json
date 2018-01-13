@@ -1,0 +1,20 @@
+{
+  "verbose": true,
+  "ignore": [
+      "client",
+      "static",
+      "views",
+      ".gitignore",
+      "gulpfile.js",
+      "package.json",
+      "nodemon.json",
+      "www"
+  ],
+  "watch": [
+      "controllers/*",
+      "middleware/*",
+      "models/*",
+      "utils/*",
+      "app.js"
+  ]
+}

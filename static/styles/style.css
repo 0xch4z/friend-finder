@@ -1,0 +1,47 @@
+.question > div {
+  width: 50%;
+  margin: 0 35px;
+}
+
+.question > h5 {
+  font-weight: 500;
+}
+
+.ay-label {
+  font-size: 25px;
+}
+
+.slider {
+  height: 30px;
+}
+
+#submit {
+  text-align: center;
+  margin: 25px;
+}
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  margin: 50px 0;
+}
+
+header {
+  width: 100%;
+}
+
+#promo {
+  text-align: center;
+}

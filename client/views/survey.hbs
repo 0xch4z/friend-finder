@@ -1,0 +1,48 @@
+<div class="container">
+  <h4>About You</h4>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate">
+          <label class="ay-label" for="name">Name (Required)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="photo" type="text" class="validate">
+          <label class="ay-label" for="photo">Link to photo (Required)</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="questions">
+    {{#each questions as |q|}}
+      <div class="question">
+        <h5>Question {{inc @index}}</h5>
+        <h6>{{q}}</h6>
+        <form action="#">
+          <p class="range-field slider">
+            <input type="range" id="test5" min="0" max="5" value="0" />
+          </p>
+        </form>
+      </div>
+    {{/each}}
+  </div>
+</div>
+
+<form id="submit">
+  <button class="waves-effect waves-light btn">Submit</button>
+</form>
+
+<div id="result-modal" class="modal">
+  <div class="modal-content">
+    <h4 id="result-name">Mark Whalberg</h4>
+    <img id="result-image" src="/pics/Mark_Whalberg.jpeg">
+  </div>
+</div>
+
+
+{{> scripts}}
+<script src="/scripts/survey.min.js"></script>

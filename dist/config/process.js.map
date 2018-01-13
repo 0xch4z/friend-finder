@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/config/process.js"],"names":["process","on","e","error","exit"],"mappings":";;AAAAA,QAAQC,EAAR,CAAW,mBAAX,EAAgCC,KAAK;AACnCC,QAAO,gBAAeD,CAAE,EAAxB;AACAE,OAAK,CAAL;AACD,CAHD","file":"process.js","sourcesContent":["process.on('uncaughtException', e => {\n  error(`Fatal error: ${e}`)\n  exit(1)\n})\n"]}

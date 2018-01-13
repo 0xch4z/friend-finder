@@ -1,0 +1,40 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist",
+    "dev": "yarn dev:client && yarn dev:server",
+    "dev:client": "./node_modules/.bin/ttab eval \"./node_modules/.bin/gulp dev\"",
+    "dev:server": "./node_modules/.bin/nodemon --exec \"./node_modules/.bin/babel-node ./src\"",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "./node_modules/.bin/babel src -s -D -d dist",
+    "build:client": "./node_modules/.bin/gulp prod"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "nodemon": "^1.14.11",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "precss": "^2.0.0",
+    "ttab": "^0.6.1"
+  }
+}

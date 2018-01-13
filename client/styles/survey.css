@@ -1,0 +1,21 @@
+.question > div {
+  width: 50%;
+  margin: 0 35px;
+}
+
+.question > h5 {
+  font-weight: 500;
+}
+
+.ay-label {
+  font-size: 25px;
+}
+
+.slider {
+  height: 30px;
+}
+
+#submit {
+  text-align: center;
+  margin: 25px;
+}
